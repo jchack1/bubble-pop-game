@@ -3,7 +3,7 @@ import { randomFloat } from "../utils/randomFloat"
 
 const DEFAULT_STARTING_LIFE_COUNT = 10
 
-const defaultStartingLives = Array.from({ length: DEFAULT_STARTING_LIFE_COUNT }, (_, index) => Math.round(randomFloat(10000000, 100000000)))
+const defaultStartingLives = Array.from({ length: DEFAULT_STARTING_LIFE_COUNT }, () => Math.round(randomFloat(10000000, 100000000)))
 
 export function useLives() {
     const [lives, setLives] = useState<number[]>(defaultStartingLives)

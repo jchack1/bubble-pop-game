@@ -36,8 +36,6 @@ export default function Stage() {
         //otherwise, lose a life
         if(forbiddenColor.id !== escapedBubbleColor.id){
             handleDecrementLives()
-        } else {
-            handleIncrementScore()
         }
     }
     const { bubbles, popBubble, registerNode } = useBubbles({onEscape, forbiddenColor, paused: isGameOver})
