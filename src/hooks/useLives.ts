@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { randomFloat } from "../utils/randomFloat"
 
-const DEFAULT_STARTING_LIFE_COUNT = 50
+const DEFAULT_STARTING_LIFE_COUNT = 10
 
 const defaultStartingLives = Array.from({ length: DEFAULT_STARTING_LIFE_COUNT }, (_, index) => Math.round(randomFloat(10000000, 100000000)))
 

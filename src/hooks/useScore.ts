@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 //number of correctly popped or escaped before getting a new life added
-const NEW_LIFE_THRESHOLD = 10
+const NEW_LIFE_THRESHOLD = 50
 
 interface UseScoreProps {
     /** Called when bubbles cross the top edge, with how many did. */
